@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91B3EA9D29D21EB3006E8D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EA9C29D21EB3006E8D47 /* AppDelegate.swift */; };
+		91B3EA9F29D21EB3006E8D47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EA9E29D21EB3006E8D47 /* SceneDelegate.swift */; };
+		91B3EAA129D21EB3006E8D47 /* FlightFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAA029D21EB3006E8D47 /* FlightFinderViewController.swift */; };
+		91B3EAA629D21EB5006E8D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B3EAA529D21EB5006E8D47 /* Assets.xcassets */; };
+		91B3EAA929D21EB5006E8D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B3EAA729D21EB5006E8D47 /* LaunchScreen.storyboard */; };
+		91B3EAB429D21EB5006E8D47 /* FlightFinderViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAB329D21EB5006E8D47 /* FlightFinderViewModelTests.swift */; };
+		91B3EABE29D21EB5006E8D47 /* RAFlightFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EABD29D21EB5006E8D47 /* RAFlightFinderUITests.swift */; };
+		91B3EAC029D21EB5006E8D47 /* RAFlightFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EABF29D21EB5006E8D47 /* RAFlightFinderUITestsLaunchTests.swift */; };
+		91B3EADC29D393A5006E8D47 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAD829D393A4006E8D47 /* UIView+Constraints.swift */; };
+		91B3EADF29D393A5006E8D47 /* ButtonPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EADB29D393A5006E8D47 /* ButtonPublisher.swift */; };
+		91B3EAE129D3A1F1006E8D47 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAE029D3A1F1006E8D47 /* UIColor+Utils.swift */; };
+		91B3EAE529D4AE83006E8D47 /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAE429D4AE83006E8D47 /* FormFieldView.swift */; };
+		91B3EAE729D4BBE6006E8D47 /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAE629D4BBE6006E8D47 /* StationListViewController.swift */; };
+		91B3EAE929D4D549006E8D47 /* TravelDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAE829D4D549006E8D47 /* TravelDateViewController.swift */; };
+		91B3EAEB29D5B703006E8D47 /* FlightFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAEA29D5B702006E8D47 /* FlightFinderViewModel.swift */; };
+		91B3EAED29D62465006E8D47 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAEC29D62465006E8D47 /* StationListViewModel.swift */; };
+		91B3EAEF29D630BD006E8D47 /* TextFieldPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAEE29D630BD006E8D47 /* TextFieldPublisher.swift */; };
+		91B3EAF129D64F93006E8D47 /* TravelDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAF029D64F93006E8D47 /* TravelDateViewModel.swift */; };
+		91B3EAF329D65E0C006E8D47 /* PassengersSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAF229D65E0C006E8D47 /* PassengersSelectionViewController.swift */; };
+		91B3EAF529D6EAC6006E8D47 /* PassengerTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAF429D6EAC6006E8D47 /* PassengerTypeView.swift */; };
+		91B3EAF729D6EB83006E8D47 /* PassengerSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAF629D6EB83006E8D47 /* PassengerSelectionViewModel.swift */; };
+		91B3EAF929D88486006E8D47 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAF829D88486006E8D47 /* APIRequest.swift */; };
+		91B3EAFB29D8849A006E8D47 /* StationListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAFA29D8849A006E8D47 /* StationListRepository.swift */; };
+		91B3EAFF29D8B795006E8D47 /* StationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EAFE29D8B795006E8D47 /* StationListTableViewCell.swift */; };
+		91B3EB0129DA31C9006E8D47 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB0029DA31C9006E8D47 /* Coordinator.swift */; };
+		91B3EB0329DA31F4006E8D47 /* FlightFinderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB0229DA31F4006E8D47 /* FlightFinderCoordinator.swift */; };
+		91B3EB0729DA38F1006E8D47 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB0629DA38F1006E8D47 /* SearchResultViewController.swift */; };
+		91B3EB0929DA391B006E8D47 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB0829DA391B006E8D47 /* SearchResultViewModel.swift */; };
+		91B3EB0D29DA4ACB006E8D47 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB0C29DA4ACB006E8D47 /* SearchResultTableViewCell.swift */; };
+		91B3EB1129DA59DB006E8D47 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB1029DA59DB006E8D47 /* UIStackView+Extensions.swift */; };
+		91B3EB1329DA60A5006E8D47 /* FlightSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB1229DA60A5006E8D47 /* FlightSearchRepository.swift */; };
+		91B3EB1529DF065B006E8D47 /* TravelDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB1429DF065B006E8D47 /* TravelDates.swift */; };
+		91B3EB1829DF0685006E8D47 /* NumberOfPassengers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB1729DF0685006E8D47 /* NumberOfPassengers.swift */; };
+		91B3EB1C29DF06A4006E8D47 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB1B29DF06A4006E8D47 /* Station.swift */; };
+		91B3EB1F29DF06BE006E8D47 /* FlightSearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB1E29DF06BE006E8D47 /* FlightSearchResultData.swift */; };
+		91B3EB2229DF06E1006E8D47 /* FlightSearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2129DF06E1006E8D47 /* FlightSearchParams.swift */; };
+		91B3EB2529DF0731006E8D47 /* FlightSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2429DF0731006E8D47 /* FlightSearchResponse.swift */; };
+		91B3EB2729DF116C006E8D47 /* StationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2629DF116C006E8D47 /* StationListViewModelTests.swift */; };
+		91B3EB2A29DF11BE006E8D47 /* Station.Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2929DF11BE006E8D47 /* Station.Mock.swift */; };
+		91B3EB2C29DF127D006E8D47 /* FlightSearchRepository.Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2B29DF127D006E8D47 /* FlightSearchRepository.Mock.swift */; };
+		91B3EB2E29DF146A006E8D47 /* StationListRepository.Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2D29DF146A006E8D47 /* StationListRepository.Mock.swift */; };
+		91B3EB3029DF1B0C006E8D47 /* SearchResultViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3EB2F29DF1B0C006E8D47 /* SearchResultViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91B3EAB029D21EB5006E8D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B3EA9129D21EB3006E8D47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B3EA9829D21EB3006E8D47;
+			remoteInfo = RAFlightFinder;
+		};
+		91B3EABA29D21EB5006E8D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B3EA9129D21EB3006E8D47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B3EA9829D21EB3006E8D47;
+			remoteInfo = RAFlightFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91B3EA9929D21EB3006E8D47 /* RAFlightFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAFlightFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B3EA9C29D21EB3006E8D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91B3EA9E29D21EB3006E8D47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		91B3EAA029D21EB3006E8D47 /* FlightFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightFinderViewController.swift; sourceTree = "<group>"; };
+		91B3EAA529D21EB5006E8D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91B3EAA829D21EB5006E8D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91B3EAAA29D21EB5006E8D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B3EAAF29D21EB5006E8D47 /* RAFlightFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAFlightFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B3EAB329D21EB5006E8D47 /* FlightFinderViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightFinderViewModelTests.swift; sourceTree = "<group>"; };
+		91B3EAB929D21EB5006E8D47 /* RAFlightFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAFlightFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B3EABD29D21EB5006E8D47 /* RAFlightFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAFlightFinderUITests.swift; sourceTree = "<group>"; };
+		91B3EABF29D21EB5006E8D47 /* RAFlightFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAFlightFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91B3EACC29D21ED2006E8D47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		91B3EAD829D393A4006E8D47 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		91B3EADB29D393A5006E8D47 /* ButtonPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPublisher.swift; sourceTree = "<group>"; };
+		91B3EAE029D3A1F1006E8D47 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		91B3EAE429D4AE83006E8D47 /* FormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldView.swift; sourceTree = "<group>"; };
+		91B3EAE629D4BBE6006E8D47 /* StationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
+		91B3EAE829D4D549006E8D47 /* TravelDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDateViewController.swift; sourceTree = "<group>"; };
+		91B3EAEA29D5B702006E8D47 /* FlightFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightFinderViewModel.swift; sourceTree = "<group>"; };
+		91B3EAEC29D62465006E8D47 /* StationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		91B3EAEE29D630BD006E8D47 /* TextFieldPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPublisher.swift; sourceTree = "<group>"; };
+		91B3EAF029D64F93006E8D47 /* TravelDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDateViewModel.swift; sourceTree = "<group>"; };
+		91B3EAF229D65E0C006E8D47 /* PassengersSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersSelectionViewController.swift; sourceTree = "<group>"; };
+		91B3EAF429D6EAC6006E8D47 /* PassengerTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerTypeView.swift; sourceTree = "<group>"; };
+		91B3EAF629D6EB83006E8D47 /* PassengerSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerSelectionViewModel.swift; sourceTree = "<group>"; };
+		91B3EAF829D88486006E8D47 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		91B3EAFA29D8849A006E8D47 /* StationListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListRepository.swift; sourceTree = "<group>"; };
+		91B3EAFE29D8B795006E8D47 /* StationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListTableViewCell.swift; sourceTree = "<group>"; };
+		91B3EB0029DA31C9006E8D47 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		91B3EB0229DA31F4006E8D47 /* FlightFinderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightFinderCoordinator.swift; sourceTree = "<group>"; };
+		91B3EB0629DA38F1006E8D47 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		91B3EB0829DA391B006E8D47 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		91B3EB0C29DA4ACB006E8D47 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		91B3EB1029DA59DB006E8D47 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		91B3EB1229DA60A5006E8D47 /* FlightSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchRepository.swift; sourceTree = "<group>"; };
+		91B3EB1429DF065B006E8D47 /* TravelDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDates.swift; sourceTree = "<group>"; };
+		91B3EB1729DF0685006E8D47 /* NumberOfPassengers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPassengers.swift; sourceTree = "<group>"; };
+		91B3EB1B29DF06A4006E8D47 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		91B3EB1E29DF06BE006E8D47 /* FlightSearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchResultData.swift; sourceTree = "<group>"; };
+		91B3EB2129DF06E1006E8D47 /* FlightSearchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchParams.swift; sourceTree = "<group>"; };
+		91B3EB2429DF0731006E8D47 /* FlightSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchResponse.swift; sourceTree = "<group>"; };
+		91B3EB2629DF116C006E8D47 /* StationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModelTests.swift; sourceTree = "<group>"; };
+		91B3EB2929DF11BE006E8D47 /* Station.Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.Mock.swift; sourceTree = "<group>"; };
+		91B3EB2B29DF127D006E8D47 /* FlightSearchRepository.Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchRepository.Mock.swift; sourceTree = "<group>"; };
+		91B3EB2D29DF146A006E8D47 /* StationListRepository.Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListRepository.Mock.swift; sourceTree = "<group>"; };
+		91B3EB2F29DF1B0C006E8D47 /* SearchResultViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91B3EA9629D21EB3006E8D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B3EAAC29D21EB5006E8D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B3EAB629D21EB5006E8D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91B3EA9029D21EB3006E8D47 = {
+			isa = PBXGroup;
+			children = (
+				91B3EACC29D21ED2006E8D47 /* README.md */,
+				91B3EA9B29D21EB3006E8D47 /* RAFlightFinder */,
+				91B3EAB229D21EB5006E8D47 /* RAFlightFinderTests */,
+				91B3EABC29D21EB5006E8D47 /* RAFlightFinderUITests */,
+				91B3EA9A29D21EB3006E8D47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91B3EA9A29D21EB3006E8D47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EA9929D21EB3006E8D47 /* RAFlightFinder.app */,
+				91B3EAAF29D21EB5006E8D47 /* RAFlightFinderTests.xctest */,
+				91B3EAB929D21EB5006E8D47 /* RAFlightFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91B3EA9B29D21EB3006E8D47 /* RAFlightFinder */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAD329D21F1E006E8D47 /* Base */,
+				91B3EAD229D21F17006E8D47 /* Views */,
+				91B3EAD129D21F10006E8D47 /* Models */,
+				91B3EAD029D21F09006E8D47 /* Common */,
+				91B3EACF29D21F01006E8D47 /* Resources */,
+				91B3EACE29D21EF5006E8D47 /* Utils */,
+			);
+			path = RAFlightFinder;
+			sourceTree = "<group>";
+		};
+		91B3EAB229D21EB5006E8D47 /* RAFlightFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB2829DF11AC006E8D47 /* MockModels */,
+				91B3EAB329D21EB5006E8D47 /* FlightFinderViewModelTests.swift */,
+				91B3EB2629DF116C006E8D47 /* StationListViewModelTests.swift */,
+				91B3EB2F29DF1B0C006E8D47 /* SearchResultViewModelTests.swift */,
+			);
+			path = RAFlightFinderTests;
+			sourceTree = "<group>";
+		};
+		91B3EABC29D21EB5006E8D47 /* RAFlightFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EABD29D21EB5006E8D47 /* RAFlightFinderUITests.swift */,
+				91B3EABF29D21EB5006E8D47 /* RAFlightFinderUITestsLaunchTests.swift */,
+			);
+			path = RAFlightFinderUITests;
+			sourceTree = "<group>";
+		};
+		91B3EACE29D21EF5006E8D47 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAE029D3A1F1006E8D47 /* UIColor+Utils.swift */,
+				91B3EADB29D393A5006E8D47 /* ButtonPublisher.swift */,
+				91B3EAEE29D630BD006E8D47 /* TextFieldPublisher.swift */,
+				91B3EAD829D393A4006E8D47 /* UIView+Constraints.swift */,
+				91B3EB1029DA59DB006E8D47 /* UIStackView+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		91B3EACF29D21F01006E8D47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAA729D21EB5006E8D47 /* LaunchScreen.storyboard */,
+				91B3EAA529D21EB5006E8D47 /* Assets.xcassets */,
+				91B3EAAA29D21EB5006E8D47 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		91B3EAD029D21F09006E8D47 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		91B3EAD129D21F10006E8D47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB1629DF066D006E8D47 /* FormDataModels */,
+				91B3EB2329DF071B006E8D47 /* FlightSearchModels */,
+				91B3EB1929DF0694006E8D47 /* Station */,
+				91B3EAF829D88486006E8D47 /* APIRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91B3EAD229D21F17006E8D47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAD429D22558006E8D47 /* FlightFinder */,
+				91B3EB0529DA389A006E8D47 /* SearchResult */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91B3EAD329D21F1E006E8D47 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EA9C29D21EB3006E8D47 /* AppDelegate.swift */,
+				91B3EA9E29D21EB3006E8D47 /* SceneDelegate.swift */,
+				91B3EB0029DA31C9006E8D47 /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		91B3EAD429D22558006E8D47 /* FlightFinder */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB0429DA3875006E8D47 /* RelatedViews */,
+				91B3EAFC29D8B64D006E8D47 /* Subviews */,
+				91B3EAA029D21EB3006E8D47 /* FlightFinderViewController.swift */,
+				91B3EAEA29D5B702006E8D47 /* FlightFinderViewModel.swift */,
+				91B3EB0229DA31F4006E8D47 /* FlightFinderCoordinator.swift */,
+			);
+			path = FlightFinder;
+			sourceTree = "<group>";
+		};
+		91B3EAD529D22575006E8D47 /* StationList */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAFD29D8B6D7006E8D47 /* Subviews */,
+				91B3EAE629D4BBE6006E8D47 /* StationListViewController.swift */,
+				91B3EAEC29D62465006E8D47 /* StationListViewModel.swift */,
+			);
+			path = StationList;
+			sourceTree = "<group>";
+		};
+		91B3EAD629D2259D006E8D47 /* TravelDates */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAE829D4D549006E8D47 /* TravelDateViewController.swift */,
+				91B3EAF029D64F93006E8D47 /* TravelDateViewModel.swift */,
+			);
+			path = TravelDates;
+			sourceTree = "<group>";
+		};
+		91B3EAD729D225AC006E8D47 /* Passengers */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB0A29DA49A1006E8D47 /* Subviews */,
+				91B3EAF229D65E0C006E8D47 /* PassengersSelectionViewController.swift */,
+				91B3EAF629D6EB83006E8D47 /* PassengerSelectionViewModel.swift */,
+			);
+			path = Passengers;
+			sourceTree = "<group>";
+		};
+		91B3EAFC29D8B64D006E8D47 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAE429D4AE83006E8D47 /* FormFieldView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		91B3EAFD29D8B6D7006E8D47 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAFE29D8B795006E8D47 /* StationListTableViewCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		91B3EB0429DA3875006E8D47 /* RelatedViews */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAD529D22575006E8D47 /* StationList */,
+				91B3EAD629D2259D006E8D47 /* TravelDates */,
+				91B3EAD729D225AC006E8D47 /* Passengers */,
+			);
+			path = RelatedViews;
+			sourceTree = "<group>";
+		};
+		91B3EB0529DA389A006E8D47 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB0B29DA4AAF006E8D47 /* Subviews */,
+				91B3EB0629DA38F1006E8D47 /* SearchResultViewController.swift */,
+				91B3EB0829DA391B006E8D47 /* SearchResultViewModel.swift */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		91B3EB0A29DA49A1006E8D47 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAF429D6EAC6006E8D47 /* PassengerTypeView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		91B3EB0B29DA4AAF006E8D47 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB0C29DA4ACB006E8D47 /* SearchResultTableViewCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		91B3EB1629DF066D006E8D47 /* FormDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB1429DF065B006E8D47 /* TravelDates.swift */,
+				91B3EB1729DF0685006E8D47 /* NumberOfPassengers.swift */,
+			);
+			path = FormDataModels;
+			sourceTree = "<group>";
+		};
+		91B3EB1929DF0694006E8D47 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EAFA29D8849A006E8D47 /* StationListRepository.swift */,
+				91B3EB1B29DF06A4006E8D47 /* Station.swift */,
+			);
+			path = Station;
+			sourceTree = "<group>";
+		};
+		91B3EB2329DF071B006E8D47 /* FlightSearchModels */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB2129DF06E1006E8D47 /* FlightSearchParams.swift */,
+				91B3EB1229DA60A5006E8D47 /* FlightSearchRepository.swift */,
+				91B3EB2429DF0731006E8D47 /* FlightSearchResponse.swift */,
+				91B3EB1E29DF06BE006E8D47 /* FlightSearchResultData.swift */,
+			);
+			path = FlightSearchModels;
+			sourceTree = "<group>";
+		};
+		91B3EB2829DF11AC006E8D47 /* MockModels */ = {
+			isa = PBXGroup;
+			children = (
+				91B3EB2929DF11BE006E8D47 /* Station.Mock.swift */,
+				91B3EB2B29DF127D006E8D47 /* FlightSearchRepository.Mock.swift */,
+				91B3EB2D29DF146A006E8D47 /* StationListRepository.Mock.swift */,
+			);
+			path = MockModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91B3EA9829D21EB3006E8D47 /* RAFlightFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B3EAC329D21EB5006E8D47 /* Build configuration list for PBXNativeTarget "RAFlightFinder" */;
+			buildPhases = (
+				91B3EA9529D21EB3006E8D47 /* Sources */,
+				91B3EA9629D21EB3006E8D47 /* Frameworks */,
+				91B3EA9729D21EB3006E8D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAFlightFinder;
+			productName = RAFlightFinder;
+			productReference = 91B3EA9929D21EB3006E8D47 /* RAFlightFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91B3EAAE29D21EB5006E8D47 /* RAFlightFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B3EAC629D21EB5006E8D47 /* Build configuration list for PBXNativeTarget "RAFlightFinderTests" */;
+			buildPhases = (
+				91B3EAAB29D21EB5006E8D47 /* Sources */,
+				91B3EAAC29D21EB5006E8D47 /* Frameworks */,
+				91B3EAAD29D21EB5006E8D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B3EAB129D21EB5006E8D47 /* PBXTargetDependency */,
+			);
+			name = RAFlightFinderTests;
+			productName = RAFlightFinderTests;
+			productReference = 91B3EAAF29D21EB5006E8D47 /* RAFlightFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91B3EAB829D21EB5006E8D47 /* RAFlightFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B3EAC929D21EB5006E8D47 /* Build configuration list for PBXNativeTarget "RAFlightFinderUITests" */;
+			buildPhases = (
+				91B3EAB529D21EB5006E8D47 /* Sources */,
+				91B3EAB629D21EB5006E8D47 /* Frameworks */,
+				91B3EAB729D21EB5006E8D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B3EABB29D21EB5006E8D47 /* PBXTargetDependency */,
+			);
+			name = RAFlightFinderUITests;
+			productName = RAFlightFinderUITests;
+			productReference = 91B3EAB929D21EB5006E8D47 /* RAFlightFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B3EA9129D21EB3006E8D47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					91B3EA9829D21EB3006E8D47 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					91B3EAAE29D21EB5006E8D47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 91B3EA9829D21EB3006E8D47;
+					};
+					91B3EAB829D21EB5006E8D47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 91B3EA9829D21EB3006E8D47;
+					};
+				};
+			};
+			buildConfigurationList = 91B3EA9429D21EB3006E8D47 /* Build configuration list for PBXProject "RAFlightFinder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91B3EA9029D21EB3006E8D47;
+			productRefGroup = 91B3EA9A29D21EB3006E8D47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91B3EA9829D21EB3006E8D47 /* RAFlightFinder */,
+				91B3EAAE29D21EB5006E8D47 /* RAFlightFinderTests */,
+				91B3EAB829D21EB5006E8D47 /* RAFlightFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91B3EA9729D21EB3006E8D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B3EAA929D21EB5006E8D47 /* LaunchScreen.storyboard in Resources */,
+				91B3EAA629D21EB5006E8D47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B3EAAD29D21EB5006E8D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B3EAB729D21EB5006E8D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91B3EA9529D21EB3006E8D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B3EB1129DA59DB006E8D47 /* UIStackView+Extensions.swift in Sources */,
+				91B3EAA129D21EB3006E8D47 /* FlightFinderViewController.swift in Sources */,
+				91B3EB0729DA38F1006E8D47 /* SearchResultViewController.swift in Sources */,
+				91B3EAED29D62465006E8D47 /* StationListViewModel.swift in Sources */,
+				91B3EB0329DA31F4006E8D47 /* FlightFinderCoordinator.swift in Sources */,
+				91B3EAE729D4BBE6006E8D47 /* StationListViewController.swift in Sources */,
+				91B3EAEB29D5B703006E8D47 /* FlightFinderViewModel.swift in Sources */,
+				91B3EB0D29DA4ACB006E8D47 /* SearchResultTableViewCell.swift in Sources */,
+				91B3EAE929D4D549006E8D47 /* TravelDateViewController.swift in Sources */,
+				91B3EB0929DA391B006E8D47 /* SearchResultViewModel.swift in Sources */,
+				91B3EAE529D4AE83006E8D47 /* FormFieldView.swift in Sources */,
+				91B3EB2229DF06E1006E8D47 /* FlightSearchParams.swift in Sources */,
+				91B3EA9D29D21EB3006E8D47 /* AppDelegate.swift in Sources */,
+				91B3EAFB29D8849A006E8D47 /* StationListRepository.swift in Sources */,
+				91B3EB2529DF0731006E8D47 /* FlightSearchResponse.swift in Sources */,
+				91B3EAF529D6EAC6006E8D47 /* PassengerTypeView.swift in Sources */,
+				91B3EADF29D393A5006E8D47 /* ButtonPublisher.swift in Sources */,
+				91B3EB1F29DF06BE006E8D47 /* FlightSearchResultData.swift in Sources */,
+				91B3EAE129D3A1F1006E8D47 /* UIColor+Utils.swift in Sources */,
+				91B3EB1C29DF06A4006E8D47 /* Station.swift in Sources */,
+				91B3EA9F29D21EB3006E8D47 /* SceneDelegate.swift in Sources */,
+				91B3EAF329D65E0C006E8D47 /* PassengersSelectionViewController.swift in Sources */,
+				91B3EAEF29D630BD006E8D47 /* TextFieldPublisher.swift in Sources */,
+				91B3EB1329DA60A5006E8D47 /* FlightSearchRepository.swift in Sources */,
+				91B3EADC29D393A5006E8D47 /* UIView+Constraints.swift in Sources */,
+				91B3EAF729D6EB83006E8D47 /* PassengerSelectionViewModel.swift in Sources */,
+				91B3EAF129D64F93006E8D47 /* TravelDateViewModel.swift in Sources */,
+				91B3EB1529DF065B006E8D47 /* TravelDates.swift in Sources */,
+				91B3EAF929D88486006E8D47 /* APIRequest.swift in Sources */,
+				91B3EAFF29D8B795006E8D47 /* StationListTableViewCell.swift in Sources */,
+				91B3EB1829DF0685006E8D47 /* NumberOfPassengers.swift in Sources */,
+				91B3EB0129DA31C9006E8D47 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B3EAAB29D21EB5006E8D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B3EB3029DF1B0C006E8D47 /* SearchResultViewModelTests.swift in Sources */,
+				91B3EB2C29DF127D006E8D47 /* FlightSearchRepository.Mock.swift in Sources */,
+				91B3EB2A29DF11BE006E8D47 /* Station.Mock.swift in Sources */,
+				91B3EAB429D21EB5006E8D47 /* FlightFinderViewModelTests.swift in Sources */,
+				91B3EB2729DF116C006E8D47 /* StationListViewModelTests.swift in Sources */,
+				91B3EB2E29DF146A006E8D47 /* StationListRepository.Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B3EAB529D21EB5006E8D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B3EABE29D21EB5006E8D47 /* RAFlightFinderUITests.swift in Sources */,
+				91B3EAC029D21EB5006E8D47 /* RAFlightFinderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91B3EAB129D21EB5006E8D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91B3EA9829D21EB3006E8D47 /* RAFlightFinder */;
+			targetProxy = 91B3EAB029D21EB5006E8D47 /* PBXContainerItemProxy */;
+		};
+		91B3EABB29D21EB5006E8D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91B3EA9829D21EB3006E8D47 /* RAFlightFinder */;
+			targetProxy = 91B3EABA29D21EB5006E8D47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91B3EAA729D21EB5006E8D47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91B3EAA829D21EB5006E8D47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91B3EAC129D21EB5006E8D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91B3EAC229D21EB5006E8D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91B3EAC429D21EB5006E8D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RAFlightFinder/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viniciusgibran.RAFlightFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91B3EAC529D21EB5006E8D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RAFlightFinder/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viniciusgibran.RAFlightFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91B3EAC729D21EB5006E8D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viniciusgibran.RAFlightFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAFlightFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RAFlightFinder";
+			};
+			name = Debug;
+		};
+		91B3EAC829D21EB5006E8D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viniciusgibran.RAFlightFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAFlightFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RAFlightFinder";
+			};
+			name = Release;
+		};
+		91B3EACA29D21EB5006E8D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viniciusgibran.RAFlightFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RAFlightFinder;
+			};
+			name = Debug;
+		};
+		91B3EACB29D21EB5006E8D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viniciusgibran.RAFlightFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RAFlightFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91B3EA9429D21EB3006E8D47 /* Build configuration list for PBXProject "RAFlightFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B3EAC129D21EB5006E8D47 /* Debug */,
+				91B3EAC229D21EB5006E8D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B3EAC329D21EB5006E8D47 /* Build configuration list for PBXNativeTarget "RAFlightFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B3EAC429D21EB5006E8D47 /* Debug */,
+				91B3EAC529D21EB5006E8D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B3EAC629D21EB5006E8D47 /* Build configuration list for PBXNativeTarget "RAFlightFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B3EAC729D21EB5006E8D47 /* Debug */,
+				91B3EAC829D21EB5006E8D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B3EAC929D21EB5006E8D47 /* Build configuration list for PBXNativeTarget "RAFlightFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B3EACA29D21EB5006E8D47 /* Debug */,
+				91B3EACB29D21EB5006E8D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B3EA9129D21EB3006E8D47 /* Project object */;
+}
